@@ -1,5 +1,6 @@
-## Base paper: 
-https://www.esann.org/sites/default/files/proceedings/legacy/es2015-56.pdf
+## Base papers: 
+- https://arxiv.org/abs/2205.02302: Machine Learning Operations (MLOps): Overview, Definition, and Architecture
+- https://arxiv.org/abs/2512.11541: A Multi-Criteria Automated MLOps Pipeline for Cost-Effective Cloud-Based Classifier Retraining in Response to Data Distribution Shifts
 
 ## research question: 
 How do different model architectures (statistical vs ML vs deep learning) compare in a production MLOps pipeline for time series anomaly detection, and how does concept drift impact their reliability over time?
