@@ -1,0 +1,21 @@
+Research questions:
+RQ1: How do ARIMA, Prophet, and LSTM-Autoencoder compare in anomaly detection accuracy and inference latency when deployed in a production MLOps pipeline?
+RQ2: How effectively does automated drift detection (using PSI and KL Divergence) identify distribution shifts in time series data, and how does drift-triggered retraining compare to periodic retraining in maintaining model performance?
+RQ3: What is the overhead (latency, throughput, resource cost) introduced by adding a full monitoring stack (Prometheus + Grafana + Evidently) to a time series anomaly detection service?
+
+Dataset:
+NAB (Numenta Anomaly Benchmark). Free, labeled, real-world time series, widely cited in the papers you're using. 
+github.com/numenta/NAB. Has multiple sub-datasets (CPU usage, traffic, Twitter, AWS metrics)
+realKnownCause gives you ground truth labels with documented causes — you can cite why an anomaly happened, which strengthens your experimental write-up. 
+realAWSCloudwatch mirrors a real production MLOps environment, directly tying your dataset choice to your research context. 
+artificialWithAnomaly lets you inject controlled drift for your RQ2 experiments, since you can shift the anomaly pattern and verify your detection pipeline catches it.
+
+Work distribution
+Member A (ML engineer) owns src/ entirely — all three models, MLflow logging, and the FastAPI app. Starts Day 1 with data loading and EDA in the notebook.
+Member B (DevOps) owns docker/, .github/, and monitoring/ — sets up the repo structure, writes the Dockerfile skeleton, and gets docker-compose running with placeholder services by Day 2.
+Member C (researcher/paper lead) opens Overleaf today, creates the IEEE conference template, and starts writing Section 2 (Related Work) using your 10 papers. Also owns the results/ folder — responsible for collecting numbers from every experiment Member A runs.
+
+
+
+
+
