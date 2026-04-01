@@ -6,7 +6,7 @@
 How do different model architectures (statistical vs ML vs deep learning) compare in a production MLOps pipeline for time series anomaly detection, and how does concept drift impact their reliability over time?
 
 ## Dataset: 
-Yahoo S5 Anomaly Detection Benchmark or NYC Taxi demand dataset
+NAB (Numenta Anomaly Benchmark) | github.com/numenta/NAB
 
 ### The three models to compare: 
 - Baseline — ARIMA/SARIMA. Statistical model, fast, interpretable. Use statsmodels. This is your null hypothesis — the "good enough" baseline many teams use in production.
