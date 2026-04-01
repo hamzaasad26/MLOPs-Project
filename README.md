@@ -23,3 +23,6 @@ LSTM Autoencoders outperform statistical baselines in production anomaly detecti
   Instrument the FastAPI /metrics endpoint using prometheus_client to expose: prediction latency histogram, anomaly detection rate gauge, and input feature statistics (mean/std of incoming windows). Connect Grafana to Prometheus, build a dashboard with at least five panels. Use Evidently AI to generate a drift report comparing your training distribution to "production" data — simulate drift by gradually shifting the test set mean by 10–20%.
 - ### Iteration 5 (Paper, demo, polish):
   IEEE paper. Generate all result tables and figures. For the 15-minute presentation: 2 min intro/problem, 3 min architecture walkthrough, 5 min live demo (docker-compose up, hit the API, show Grafana dashboard, trigger drift alert), 3 min results, 2 min conclusion.
+
+## literature rewview: 
+https://docs.google.com/spreadsheets/d/1NSYsTlCwzntzh36sWbKB91PFQI0Zk7_ou4mIUabdkcQ/edit?usp=sharing
