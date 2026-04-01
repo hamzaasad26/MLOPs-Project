@@ -1,7 +1,3 @@
-## Base papers: 
-- https://arxiv.org/abs/2205.02302: Machine Learning Operations (MLOps): Overview, Definition, and Architecture
-- https://arxiv.org/abs/2512.11541: A Multi-Criteria Automated MLOps Pipeline for Cost-Effective Cloud-Based Classifier Retraining in Response to Data Distribution Shifts
-
 ## research question: 
 How do different model architectures (statistical vs ML vs deep learning) compare in a production MLOps pipeline for time series anomaly detection, and how does concept drift impact their reliability over time?
 
@@ -9,9 +5,9 @@ How do different model architectures (statistical vs ML vs deep learning) compar
 NAB (Numenta Anomaly Benchmark) | github.com/numenta/NAB
 
 ### The three models to compare: 
-- Baseline — ARIMA/SARIMA. Statistical model, fast, interpretable. Use statsmodels. This is your null hypothesis — the "good enough" baseline many teams use in production.
-- Improved — Facebook Prophet. Handles seasonality and holidays automatically. pip install prophet. Better than ARIMA on most real-world series with trends.
-- Best — LSTM Autoencoder. Reconstruct the time series; high reconstruction error = anomaly. Use PyTorch or Keras. This is your "improvement" claim for Track-II — it should outperform the others, and you explain why.
+- Baseline — ARIMA/SARIMA
+- Improved — Facebook Prophet
+- Best — LSTM Autoencoder
 
 ## Our Research claim:
 LSTM Autoencoders outperform statistical baselines in production anomaly detection pipelines, but introduce latency and drift sensitivity that requires automated monitoring to maintain.
