@@ -15,7 +15,7 @@ Member A (ML engineer) owns src/ entirely — all three models, MLflow logging, 
 Member B (DevOps) owns docker/, .github/, and monitoring/ — sets up the repo structure, writes the Dockerfile skeleton, and gets docker-compose running with placeholder services by Day 2.
 Member C (researcher/paper lead) opens Overleaf today, creates the IEEE conference template, and starts writing Section 2 (Related Work) using your 10 papers. Also owns the results/ folder — responsible for collecting numbers from every experiment Member A runs.
 
-
+literature rewview: https://docs.google.com/spreadsheets/d/1NSYsTlCwzntzh36sWbKB91PFQI0Zk7_ou4mIUabdkcQ/edit?usp=sharing
 
 
 
